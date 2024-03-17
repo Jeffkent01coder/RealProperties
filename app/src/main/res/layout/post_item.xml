@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="20dp"
+    android:id="@+id/crdContent"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bgd"
+            android:scaleType="centerCrop"
+            />
+
+       <TextView
+           android:id="@+id/tvTitle"
+           android:layout_width="match_parent"
+           android:layout_height="20dp"
+           android:layout_marginVertical="5dp"
+           android:textSize="18sp"
+           android:textStyle="normal"
+           android:text="House on sale"
+           android:layout_marginStart="25dp"
+           />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="25dp"
+                android:text="1 Million (Negotiable)"
+                />
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="25dp"
+                android:text="Nairobi"
+                />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivMore"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:src="@drawable/ic_baseline_add_24"-->
+<!--                android:layout_marginStart="70dp"-->
+<!--                />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnCall"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Call"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#B57E2A"
+                />
+
+            <Button
+                android:id="@+id/btnMessage"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:backgroundTint="#B57E2A"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
